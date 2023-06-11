@@ -3,6 +3,12 @@ package com.transperfect.movies;
 import java.util.Comparator;
 import java.util.List;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Service;
+
+
+@Service
+@Primary
 public class RecommendationServiceHardcodedImpl implements IRecommendationsService {
 
     private final List<Movie> movies = List.of(new Movie(3l, "The Dark Knight", "Action", 2008, "Christopher Nolan"),
